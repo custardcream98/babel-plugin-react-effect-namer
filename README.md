@@ -50,9 +50,7 @@ Configure Babel to use the plugin. Here’s an example using a `babel.config.js`
 
 ```js
 module.exports = {
-  plugins: [
-    "@custardcream/babel-plugin-react-effect-namer",
-  ],
+  plugins: ['@custardcream/babel-plugin-react-effect-namer'],
 };
 ```
 
@@ -67,11 +65,11 @@ Once configured, any React component using `useEffect` or `useLayoutEffect` with
 **Before transformation:**
 
 ```jsx
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
 function MyComponent() {
   useEffect(() => {
-    console.log("Effect run");
+    console.log('Effect run');
   }, []);
 
   return <div>Hello</div>;
@@ -81,11 +79,11 @@ function MyComponent() {
 **After transformation (the actual output might vary in formatting):**
 
 ```jsx
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
 function MyComponent() {
   const MyComponent_useEffect_1 = () => {
-    console.log("Effect run");
+    console.log('Effect run');
   };
 
   useEffect(MyComponent_useEffect_1, []);
@@ -99,11 +97,11 @@ function MyComponent() {
 **Before transformation:**
 
 ```jsx
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
 function MyComponent() {
   useEffect(function () {
-    console.log("Effect run");
+    console.log('Effect run');
   }, []);
 
   return <div>Hello</div>;
@@ -113,11 +111,11 @@ function MyComponent() {
 **After transformation:**
 
 ```jsx
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
 function MyComponent() {
   function MyComponent_useEffect_1() {
-    console.log("Effect run");
+    console.log('Effect run');
   }
 
   useEffect(MyComponent_useEffect_1, []);
@@ -133,15 +131,15 @@ When a component has more than one effect hook call, the plugin assigns unique n
 **Before transformation:**
 
 ```jsx
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
 function MyComponent() {
   useEffect(() => {
-    console.log("First effect");
+    console.log('First effect');
   }, []);
 
   useEffect(() => {
-    console.log("Second effect");
+    console.log('Second effect');
   }, []);
 
   return <div>Hello</div>;

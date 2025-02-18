@@ -12,6 +12,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
+    "format": "prettier --write .",
     "build": "tsup src/index.ts",
     "test": "vitest",
     "changeset": "changeset",

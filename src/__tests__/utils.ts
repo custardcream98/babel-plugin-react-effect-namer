@@ -1,8 +1,5 @@
 export const generateArrowFunctionEffectComponent = (
-  effectType:
-    | "useEffect"
-    | "useLayoutEffect"
-    | `use${string}Effect`
+  effectType: 'useEffect' | 'useLayoutEffect' | `use${string}Effect`,
 ) => `
   import React, { ${effectType} } from 'react';
 
@@ -15,10 +12,7 @@ export const generateArrowFunctionEffectComponent = (
 `;
 
 export const generateAnonymousFunctionEffectComponent = (
-  effectType:
-    | "useEffect"
-    | "useLayoutEffect"
-    | `use${string}Effect`
+  effectType: 'useEffect' | 'useLayoutEffect' | `use${string}Effect`,
 ) => `
   import React, { ${effectType} } from 'react';
 
@@ -32,10 +26,7 @@ export const generateAnonymousFunctionEffectComponent = (
 `;
 
 export const generateNamedFunctionEffectComponent = (
-  effectType:
-    | "useEffect"
-    | "useLayoutEffect"
-    | `use${string}Effect`
+  effectType: 'useEffect' | 'useLayoutEffect' | `use${string}Effect`,
 ) => `
   import React, { ${effectType} } from 'react';
 
@@ -48,10 +39,7 @@ export const generateNamedFunctionEffectComponent = (
 `;
 
 export const generateMultipleEffectsComponent = (
-  effectType:
-    | "useEffect"
-    | "useLayoutEffect"
-    | `use${string}Effect`
+  effectType: 'useEffect' | 'useLayoutEffect' | `use${string}Effect`,
 ) => `
   import React, { ${effectType} } from 'react';
 
@@ -69,8 +57,7 @@ export const generateMultipleEffectsComponent = (
   }
 `;
 
-export const generateMultipleTypesOfEffectsComponent =
-  () => `
+export const generateMultipleTypesOfEffectsComponent = () => `
   import React, { useEffect, useLayoutEffect } from 'react';
 
   function MyComponent() {
@@ -87,8 +74,7 @@ export const generateMultipleTypesOfEffectsComponent =
   }
 `;
 
-export const generateAnonymousFunctionEffectCustomHook =
-  () => `
+export const generateAnonymousFunctionEffectCustomHook = () => `
   import { useEffect } from 'react';
 
   function useMyCustomHook() {
