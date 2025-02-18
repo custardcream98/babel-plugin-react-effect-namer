@@ -30,6 +30,10 @@ This plugin automatically transforms anonymous callbacks passed to React's `useE
 - **Unique Naming:** Automatically assigns unique names (e.g., `MyComponent_useEffect_1`, `MyComponent_useEffect_2`) when multiple effects are present.
 - **Safe Transformations:** Leaves already named functions untouched.
 
+![devtools example](./devtools.png)
+
+You can check effect hook names on stack traces.
+
 ---
 
 ## Installation
