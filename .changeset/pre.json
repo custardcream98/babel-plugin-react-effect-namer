@@ -1,0 +1,10 @@
+{
+  "mode": "pre",
+  "tag": "experimental",
+  "initialVersions": {
+    "@custardcream/babel-plugin-react-effect-namer": "0.0.1"
+  },
+  "changesets": [
+    "orange-experts-grow"
+  ]
+}
