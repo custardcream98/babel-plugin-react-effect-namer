@@ -1,6 +1,6 @@
 {
   "name": "@custardcream/babel-plugin-react-effect-namer",
-  "version": "0.0.2-experimental.1",
+  "version": "0.0.3",
   "description": "Babel plugin for naming effect hook callbacks",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,8 @@
     "changeset": "changeset",
     "changeset:pre": "changeset pre",
     "changeset:version": "changeset version",
-    "changeset:publish": "changeset publish"
+    "changeset:publish": "changeset publish",
+    "release": "npm run build && changeset publish"
   },
   "keywords": [
     "babel",
