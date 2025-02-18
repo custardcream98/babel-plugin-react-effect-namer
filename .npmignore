@@ -4,6 +4,9 @@
 .vscode
 .DS_Store
 .idea
+.prettierignore
+.prettierrc
+eslint.config.mjs
 
 node_modules
 src

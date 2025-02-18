@@ -1,7 +1,7 @@
 import { types as t, NodePath } from '@babel/core';
 
-export const getComponentName = (path: NodePath<t.Node>): string | null => {
-  let componentName: string | null = null;
+export const getComponentName = (path: NodePath<t.Node>): null | string => {
+  let componentName: null | string = null;
 
   path.findParent((p) => {
     if (p.isFunctionDeclaration() && p.node.id) {

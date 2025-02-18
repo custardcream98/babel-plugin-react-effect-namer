@@ -1,5 +1,6 @@
-import { describe, it, expect } from 'vitest';
 import * as babel from '@babel/core';
+import { describe, it, expect } from 'vitest';
+
 import reactEffectNamerPlugin from '../index';
 import {
   generateAnonymousFunctionEffectComponent,
