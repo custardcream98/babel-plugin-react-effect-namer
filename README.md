@@ -8,6 +8,10 @@
   into <bold>named functions</bold> to improve debugging and readability.
 </p>
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/@custardcream/babel-plugin-react-effect-namer" target="_blank"><img src="https://img.shields.io/npm/v/@custardcream/babel-plugin-react-effect-namer.svg?style=for-the-badge&label=Latest&color=black" alt="Package version" /></a>
+</p>
+
 <br />
 <br />
 

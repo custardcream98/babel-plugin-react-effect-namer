@@ -7,6 +7,8 @@
 .prettierignore
 .prettierrc
 eslint.config.mjs
+.husky
+.lintstagedrc
 
 node_modules
 src

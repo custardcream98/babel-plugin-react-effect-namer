@@ -1,0 +1,5 @@
+pnpm test:ci
+
+pnpm typecheck
+
+pnpm exec lint-staged
